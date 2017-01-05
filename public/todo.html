@@ -218,13 +218,13 @@
 
           <ol>
             <li>
-              <h2>0) Load seed data</h2>
+              <h2>Load seed data</h2>
               <p>What is seed data?  Where is the actual file located? 
               And what was that rake task to load it?</p>
             </li>
 
             <li>
-              <h2>1) Create HTML</h2>
+              <h2>Create HTML</h2>
               <p>Study <a href="/draft.html">the draft</a>: which parts
               of the html go into the layout? the view? a partial? Study the layout that's
               already there: which parts do you need to preserve?</p>
@@ -234,17 +234,19 @@
             </li>
 
             <li>
-              <h2>2) Move CSS and images over to Asset Pipeline</h2>
+              <h2>Move CSS and images over to Asset Pipeline</h2>
               <p>Which part of the existing Stylesheet should be turned into
               sass?  Use <a href="http://css2sass.herokuapp.com/">a converter</a>.  
               Which part should remain plain css?  Just copy it over. Don't forget
               to test in your browser! 
               </p>
+              <p>There is a svg image and a pixel image in the draft. Move both over
+              to the asset pipeline and use <kbd></kbd></p>
               <p>This step should be a git commit!</p>
             </li>
 
             <li>
-              <h2>3) Add a header image</h2>
+              <h2>Add a header image</h2>
               <p>Pick a <a href="https://commons.wikimedia.org/wiki/Commons:Featured_pictures/Food_and_drink">free image</a> to
                 be the header image of this app. Choose an image that is available
                 in a size of at least 2000px width.</p>
@@ -255,9 +257,8 @@
 
             <li>
               <h2>Assets in production</h2>
-              <p>Now check out your app a second time from git, and run it in
-              production by setting RAILS_ENV=production.
-              What happens to the assets?</p>
+              <p>Now deploy your app to heroku and
+              check what happens to the assets!</p>
             </li>
 
 

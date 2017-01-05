@@ -20,6 +20,11 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+
+# using postgres only in production is stupid.
+# we should really be using it in development too!
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
