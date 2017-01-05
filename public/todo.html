@@ -218,29 +218,40 @@
 
           <ol>
             <li>
-              <h2>Load seed data</h2>
+              <h2>0) Load seed data</h2>
               <p>What is seed data?  Where is the actual file located? 
               And what was that rake task to load it?</p>
             </li>
 
             <li>
-              <h2>Create HTML</h2>
+              <h2>1) Create HTML</h2>
               <p>Study <a href="/draft.html">the draft</a>: which parts
               of the html go into the layout? the view? a partial? Study the layout that's
               already there: which parts do you need to preserve?</p>
-              <p>Don't forget to replace the links with <kbd>link_to</kbd></p>
+              <p>Don't forget to replace the links with <kbd>link_to</kbd> - or better
+                yet <kbd>link_to_unless_current</kbd></p>
               <p>This step should be a git commit!</p>
             </li>
 
             <li>
-              <h2>Move CSS and img over to Asset Pipeline</h2>
+              <h2>2) Move CSS and images over to Asset Pipeline</h2>
               <p>Which part of the existing Stylesheet should be turned into
-              sass?  Use convert-sass on the command line to do it.  Which
-              part should remain plain css?  Just copy it over. Don't forget
+              sass?  Use <a href="http://css2sass.herokuapp.com/">a converter</a>.  
+              Which part should remain plain css?  Just copy it over. Don't forget
               to test in your browser! 
               </p>
               <p>This step should be a git commit!</p>
             </li>
+
+            <li>
+              <h2>3) Add a header image</h2>
+              <p>Pick a <a href="https://commons.wikimedia.org/wiki/Commons:Featured_pictures/Food_and_drink">free image</a> to
+                be the header image of this app. Choose an image that is available
+                in a size of at least 2000px width.</p>
+              <p>Create a version with 1000px width and one with 2000px width</p>
+              <p>Use the 
+
+            </li>            
 
             <li>
               <h2>Assets in production</h2>
@@ -248,6 +259,7 @@
               production by setting RAILS_ENV=production.
               What happens to the assets?</p>
             </li>
+
 
             <li>
               <h2>Javascript, jQuery, AJAX</h2>
