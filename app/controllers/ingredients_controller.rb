@@ -15,6 +15,10 @@ class IngredientsController < ApplicationController
   # GET /ingredients/new
   def new
     @ingredient = Ingredient.new
+    respond_to do |format|
+      format.html {}
+      format.js {}
+    end
   end
 
   # GET /ingredients/1/edit
