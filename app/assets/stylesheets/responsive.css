@@ -1,0 +1,23 @@
+@media screen and (min-width: 1000px) {
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        flex: 5;
+    }
+
+    nav {
+        flex: 2;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+}

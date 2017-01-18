@@ -13,13 +13,20 @@
       padding: 20px;
       text-align: center;
     }
+
+    h1 {
+      margin-top: 0;
+      padding-top: 0;
+    }
   </style>
 </head>
+
 <body>
 
 <div class="row">
   <header class="col-md-12">
-    <h1>Cooking like a Pro</h1>
+    <h1><img src="<%= asset_path 'logo.svg' %>">
+    Cookin' on Rails</h1>
   </header>
 </div>
 
@@ -40,5 +47,6 @@
 <div class="row">
   <footer class="col-md-12">I AM A FOOTER</footer>
 </div>
+
 </body>
 </html>
