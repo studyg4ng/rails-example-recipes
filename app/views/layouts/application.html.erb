@@ -2,13 +2,43 @@
 <html>
 <head>
   <title>Rezepte</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<%= yield %>
+<div class="row">
+  <header class="col-md-12">
+    <h1>Cooking like a Pro</h1>
+  </header>
+</div>
 
+<div class="row">
+  <div class="navigation col-md-4">
+    <ul>
+      <li><%= link_to_unless_current "home", root_path %></li>
+      <li><%= link_to_unless_current "recipes", recipes_path %></li>
+      <li><%= link_to_unless_current "search recipe", search_recipes_path %></li>
+      <li><%= link_to_unless_current "new recipe", new_recipe_path %></li>
+    </ul>
+  </div>
+
+  <div class="content col-md-8"><%= yield %>
+  </div>
+</div>
+
+<div class="row">
+  <footer class="col-md-12">I AM A FOOTER</footer>
+</div>
 </body>
 </html>
